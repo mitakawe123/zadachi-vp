@@ -1,0 +1,23 @@
+using (StreamReader streamReader = new StreamReader("./matrix.txt"))
+{
+    string ln;
+    int lineCounter = 0 ,sum = 0;
+    List<int> sums = new List<int>();
+    while ((ln = streamReader.ReadLine()) != null)
+    {
+        lineCounter++;
+        string[] f = ln.Trim().Split();
+        for (int i = 0; i < f.Length; i++)
+        {
+            sum += int.Parse(f[i]);
+        }     
+        sums.Add(sum);
+        sum = 0;
+    }
+    int printLineCounter = 0;
+    foreach (var item in sums)
+    {
+        printLineCounter++;
+        Console.Write("Line number: " + printLineCounter + " sum: " + item + "\n");
+    }
+}
