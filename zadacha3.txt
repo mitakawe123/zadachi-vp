@@ -58,7 +58,7 @@ using (StreamReader streamReader = new StreamReader("./matrix.txt"))
     Console.WriteLine("\n");
     Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
     Console.WriteLine($"Sum of even number: {sumEven}");
-    Console.WriteLine($"Sum of even number: {sumOdd}");
+    Console.WriteLine($"Sum of odd number: {sumOdd}");
     Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
     Console.WriteLine($"Sum of even row numbers: {sumEvenRow}");
     Console.WriteLine($"Sum of odd col numbers: {sumOddCol}");
